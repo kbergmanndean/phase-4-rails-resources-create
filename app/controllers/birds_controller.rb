@@ -14,6 +14,10 @@ class BirdsController < ApplicationController
     else
       render json: { error: "Bird not found" }, status: :not_found
     end
+
+    def create
+      byebug
+    end
   end
 
 end
